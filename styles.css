@@ -1,0 +1,361 @@
+/* .custom-navbar {
+    background-color: #131944;
+} */
+
+* {
+  font-family: Montserrat;
+}
+body {
+  background: white;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/* ----------------------navbar--------------------------- */
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+/* ----------------------carousel--------------------------- */
+
+/* Example CSS for .carousel-item and .carousel-caption */
+.hero .carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.hero .carousel-caption {
+  bottom: 250px;
+  z-index: 2;
+}
+
+.hero .carousel-caption h5 {
+  font-size: 45px;
+  /* text-transform:uppercase; */
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.hero .carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.9;
+}
+
+.hero .carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+/* ----------------------button--------------------------- */
+
+.button-24 {
+  background: #ec691f;
+  border: 1px solid #ec691f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ec691f;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+/* ----------------------responsive--------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero .carousel-caption {
+    bottom: 370px;
+  }
+  .hero .carousel-caption p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .hero .carousel-caption {
+    bottom: 165px;
+  }
+  .hero .carousel-caption h5 {
+    font-size: 35px; /* 35 */
+  }
+  .hero .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+  .hero .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 20px; /* 20 */
+  }
+
+  .about-text {
+    margin-top: 2rem;
+  }
+  .about-text h2 {
+    font-size: 30px; /* Increase the font size for smaller screens */
+  }
+}
+
+/* ----------------------logo slider--------------------------- */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+/* ----------------------about content--------------------------- */
+
+.about-text h2 {
+  font-size: 40px; /* 40 */
+}
+.about-text p {
+  font-size: 20px; /* 20 */
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------desc content--------------------------- */
+
+.card-title {
+color:#ec691f
+}
+
+.desc-custom {
+  background-color: #131944;
+}
+
+.desc-header-custom h2 {
+  color: white;
+}
+
+.card {
+  position: relative;
+  border-radius: 50px 50px;
+  margin-bottom: 20px;
+}
+
+.card-body .svg-icon {
+  position: absolute;
+  bottom: 26px;
+  right: 26px;
+}
+
+.container-svg {
+  border-radius: 50px 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px; /* Adjust the size of the container to fit the SVG */
+  height: 80px; /* Adjust the size of the container to fit the SVG */
+  background: #ec691f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 101px;
+height: 97px; */
+flex-shrink: 0;
+}
+
+/* Ensure the SVG icon is vertically centered */
+.container-svg svg {
+  vertical-align: middle;
+}
+
+
+
+/* CSS for .tmcontainer */
+.tmcontainer {
+  background: #131944;
+
+}
+
+/* CSS for elements inside .tmcontent */
+.tmcontent section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.tmcontent .section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #131944;
+}
+
+.tmcontent .section-header:after {
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #ec691f;
+}
+
+.tmcontent .section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.tmcontent .testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+
+.tmcontent .single-item {
+  background: #131944;
+  color: white;
+  padding: 15px;
+  margin: 50px 15px;
+  border-radius: 50px 0px;
+}
+
+.tmcontent .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tmcontent .img-area {
+  margin: 0 15px 15px 15px;
+}
+
+.tmcontent .img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid #ec691f;
+}
+
+.tmcontent .content {
+  font-size: 18px;
+}
+
+.tmcontent .content p {
+  text-align: justify;
+}
+
+.tmcontent .content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: #ec691f;
+}
+
+.tmcontent .socials i {
+  margin-right: 25px;
+}
+
+.tmcontent .bio h4 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.tmcontent .carousel-control-next-icon,
+.tmcontent .carousel-control-prev-icon {
+  background-color: #ec691f;
+}
+
+@media (max-width: 767px) {
+  /* Media query styles (if any) */
+}
