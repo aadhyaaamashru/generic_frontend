@@ -212,25 +212,31 @@ body {
   height: auto;
 }
 
+
 /* ----------------------desc content--------------------------- */
 
+.desc-custom {
+  background-color: white;
+}
 .card-title {
 color:#ec691f
 }
 
-.desc-custom {
-  background-color: #131944;
-}
-
 .desc-header-custom h2 {
-  color: white;
+  color: black;
 }
 
 .card {
   position: relative;
-  border-radius: 50px 50px;
+  border-radius: 20px 20px;
   margin-bottom: 20px;
+  border-radius: 20px;
+  /* Change the alpha value from 0.24 to a lower value for a lighter shadow */
+  box-shadow: rgba(19, 25, 68, 2) 0px 3px 8px;
 }
+
+
+
 
 .card-body .svg-icon {
   position: absolute;
@@ -239,7 +245,7 @@ color:#ec691f
 }
 
 .container-svg {
-  border-radius: 50px 0px;
+  border-radius: 50px 0px  20px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -259,7 +265,29 @@ flex-shrink: 0;
   vertical-align: middle;
 }
 
+/* Add styles for the background container */
+/* .desc-background-container {
+  width: 120%;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
 
+.desc-custom-background {
+  background-color: orange;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.tmcontent {
+  padding: 50px 0;
+  /* background:linear-gradient(to bottom,#61657E 10%,30%,white); */
+background: #f3f6ff;
+}
 
 /* CSS for .tmcontainer */
 .tmcontainer {
@@ -306,8 +334,8 @@ flex-shrink: 0;
 }
 
 .tmcontent .single-item {
-  background: #131944;
-  color: white;
+  background: white;
+  color: black;
   padding: 15px;
   margin: 50px 15px;
   border-radius: 50px 0px;
