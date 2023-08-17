@@ -84,6 +84,9 @@ body {
   z-index: 1;
 }
 
+.hero img {
+  object-fit: cover;
+}
 /* ----------------------button--------------------------- */
 
 .button-24 {
