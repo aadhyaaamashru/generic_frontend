@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      rel="Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <!-- //navbar move up -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <!-- navbar bandi  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles-aboutpage.css" />
+</head>
+
+<body>
+    <!------------------------navbar content----------------------------->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/Push Properties logo png.png" alt="Bootstrap" width="200" height="50" style="mix-blend-mode: multiply" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pt-2">
+                        <a class="nav-link hover-link" aria-current="page" href="../homepage/homepage.html">
+                Homepage
+              </a>
+                    </li>
+                    <li class="nav-item pt-2">
+                        <a class="nav-link hover-link" href="../aboutpage/aboutpage.html">
+                About Us
+              </a>
+                    </li>
+                    <li class="nav-item pt-2">
+                        <a class="nav-link hover-link" href="../contactuspage/contactuspage.html">
+                Contact Us
+              </a>
+                    </li>
+                    <li class="nav-item pt-2">
+                        <a class="nav-link hover-link" href="../servicespage/servicespage.html">
+                Services
+              </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="button-24" id="openModal">Get A Quote</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Get a Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Quote form or content goes here -->
+                    <p>Enter your details to get a quote.</p>
+                    <form>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="serviceDropdown" class="form-label">Choose Service</label>
+                                <select class="form-select" id="serviceDropdown">
+                        <option selected disabled>Select a service</option>
+                        <option value="service1">Handyman repair</option>
+                        <option value="service2">Carpentry work</option>
+                        <option value="service3">Drywall repair</option>
+                        <option value="service1">Plumbing repairs</option>
+                        <option value="service2">Design</option>
+                        <option value="service3">Design</option>
+                      </select>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="button-24 btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------top-pic content----------------------------->
+
+    <div class="top-pic-outer">
+        <img src="../assets/img2-cropped.jpeg" alt="" class="top-pic-img img-fluid" />
+        <div class="overlay"></div>
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>We are a dedicated team committed to <span>EXCELLENCE</span></p>
+        </div>
+    </div>
+
+    <!------------------------blog-post content----------------------------->
+    <div class="blog-post-container">
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="../assets/img4.webp" />
+            </div>
+            <div class="blog-post_info">
+                <h1 class="blog-post_title">Lorem ipsum dolor sit amet.</h1>
+                <p class="blog-post_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a, tempore veniam quasi sint fugiat facilis, facere, amet magnam optio velit. Laudantium et temporibus soluta, esse cupiditate aliquid dicta accusantium.
+                </p>
+                <a href="#">
+                    <button class="button-24" role="button">Learn More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------our team content----------------------------->
+
+    <div class="team-parent-container team-custom-padding">
+        <div class="tiles-header">
+            <h1 class="section-header">
+                Our Team
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </h1>
+        </div>
+        <div class="team-container container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="../assets/img6.jpeg" alt="Front Image" />
+                            </div>
+                            <div class="card-back">
+                                <h2>Jane Doe<br /><span>Senior Designer</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="../assets/img7.jpeg" alt="Front Image" />
+                            </div>
+                            <div class="card-back">
+                                <h2>Jane Doe<br /><span>Senior Designer</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="../assets/img8.jpeg" alt="Front Image" />
+                            </div>
+                            <div class="card-back">
+                                <h2>Jane Doe<br /><span>Senior Designer</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <img src="../assets/img9.jpeg" alt="Front Image" />
+                            </div>
+                            <div class="card-back">
+                                <h2>Jane Doe<br /><span>Senior Designer</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <!-- <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a> -->
+                                <img src="../assets/Push Properties logo png.png" alt="" />
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>
+                                    Dont miss to subscribe to our new feeds, kindly fill the form below.
+                                </p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address" />
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/homepage/script-homepage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
